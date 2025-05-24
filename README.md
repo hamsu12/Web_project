@@ -1,5 +1,5 @@
 # Web_project
-![img.png](img.png)
+![img.png](img/img.png)
 1 ..?
 -> 멘토멘티, C언어 테트리스 프로젝트
 

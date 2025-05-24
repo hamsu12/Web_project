@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Ownglyph_corncorn-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.intro_1{
+    font-family: 'Ownglyph_ParkDaHyun';
+    font-size:23px;
+    text-align: center;
+    margin:30px;
+    color: #393939;
+}
+#intro img{
+    width: 1.5em;
+    margin-right: 15px;
+}
+.main-content{
+
+}
+.intro_content{
+    display:flex;
+    font-family: 'Ownglyph_ParkDaHyun';
+}
+.intro_box {
+    flex: 1;
+    font-size:20px;
+}
+.intro_box b{
+    color: #474747;
+}
+
+.mail-form {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.mail-form input,
+.mail-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.mail-form button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#birth{
+    line-height: 0.7;
+}
+#birth:hover {
+    cursor: pointer;
+}
+.birth-test {
+    font-size:17px;
+    color: #a1a1a1;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.notebook-page {
+    background-color: white;
+    background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
+    background-size: 100% 24px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 70px;
+    margin-bottom: 40px;
+}
+
+.notebook-page::before {
+    content: "";
+    position: absolute;
+    left: 32px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.tape {
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: rotate(-2deg);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.contact-list i {
+    margin-right: 12px;
+    margin-top: 4px;
+    color: rgb(49, 130, 206);
+}
+
+#story p{
+    line-height: 1.5;
+    font-size: 15px;
+}
+#skillsAndTools {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#news h3{
+    text-align: center;
+    margin:0 auto;
+}
+
+.news-img1{
+    width: 350px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: -10px;
+}
+
+.news-item {
+    position: relative;
+    margin-bottom: -10px; /* 겹치게 */
+}
+
+.news-wrapper {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    gap: 10px; /* 사진과 설명 사이 간격 */
+}
+
+.news-description {
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.news-item.first img {
+    transform: rotate(-3deg);
+}
+.news-item.middle img {
+    transform: rotate(2deg);
+    margin-left: 15px;
+}
+.news-item.last img {
+    transform: rotate(-2deg);
+    margin-right: 15px;
+}
+
+
+.polaroid-container {
+    width: 100%;
+    margin-left: -30px;
+}
+
+.polaroid-slide {
+    display: flex;
+    gap: -30px; /* 겹치기 위한 마이너스 간격 효과 */
+    padding: 0 20px;
+}
+
+.polaroid {
+    font-family:'Ownglyph_ParkDaHyun';
+    background: white;
+    padding: 10px 10px 25px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #333;
+    width: 200px;
+    height: 370px;
+    margin-right: -50px; /* 일부러 겹치도록 */
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.polaroid:hover {
+    transform: scale(1.05) rotate(0deg) !important;
+    z-index: 10;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.polaroid-container .tape{
+    transform: rotate(-32deg);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: rotate(0) scale(1.02);
+}
+
+.project-card:nth-child(2n) {
+    transform: rotate(1deg);
+}
+.project-card:nth-child(2n):hover {
+    transform: rotate(0) scale(1.02);
+}
+
+.project-status {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #38a169;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-15deg);
+    z-index: 10;
+    font-family:'Ownglyph_ParkDaHyun';
+    font-size: 20px;
+}
+
+.project-in-progress {
+    background-color: #3182ce;
+}
+
+.project-image {
+    height: 220px;
+    background-color: #edf2f7;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.project-image .img1{
+    object-position: 50% 50%;
+}
+.project-content {
+    padding: 40px;
+}
+
+.project-content h3 {
+}
+
+.project-content p {
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.project-tags span {
+    padding: 4px 8px;
+    background-color: #edf2f7;
+    color: #1a202c;
+    font-size: 12px;
+    border-radius: 16px;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-button {
+    padding: 6px 12px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.project-button:hover {
+    background-color: #f7fafc;
+}
+
+.project-rating {
+    color: #ecc94b;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.nav {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+

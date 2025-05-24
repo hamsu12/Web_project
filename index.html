@@ -1,24 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Hamsu</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/section.css">
 </head>
 <body>
 <header>
+    <div class="notebook-page">
+        <div class="tape" style="top: -15px; right: 40px;"></div>
 
+    <h1>
+        <span>2025 Hamsu Web-Project &nbsp🗒️</span>
+    </h1>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="test1.html">test1</a></li>
+            <li><a href="test2.html">test2</a></li>
+        </ul>
+        <div class="tape" style="bottom: -15px; left: 40px;"></div>
+    </div>
 </header>
-<menu>
-  <div>
-    메뉴바.
-  </div>
-</menu>
-<main>
-  안녕하세요
-</main>
+
+<div class="container">
+    <nav id="sidebar">
+        <a href="#intro">intro</a>
+        <a href="#story">story</a>
+        <a href="#news">news</a>
+        <a href="#projects">projects</a>
+        <a href="#company">company</a>
+        <a href="#future">future</a>
+    </nav>
+
+
+    <main>
+        <div class="main-content">
+            <div class="main-box">
+                <img src="img/hamsu.png">
+            </div>
+            <div class="main-box">
+                <h1>프론트엔드 개발자를 꿈꾸는<br>함수정입니다.</h1>
+            </div>
+        </div>
+
+        <section id="intro">
+            <div class="notebook-page">
+                <h2>Intro</h2>
+                <p class="intro_1">너무 잘하고 싶어지면 아무것도 할 수 없게 된다 !</p>
+                <div class="intro_content">
+                <div class="intro_box">
+                    <p><b>name</b> : 함수정</p>
+                    <div class="birth" id="birth" style="cursor: pointer;">
+                    <p><b>birth</b> : 2004.12.25 🎄
+                        <p class="birth-test">생일을 클릭해보세요 !ㅎㅎ</p></p>
+                    </div>
+                    <p><b>school</b> : 공주대학교 소프트웨어학과 23학번</p>
+                    <p><b>email</b> : hamsj2413@naver.com</p>
+                    <p><b>hobby</b> : 그림 , 소통</p>
+
+                    <a href="https://www.instagram.com/fx_jeong/" target="_blank">
+                        <img src="img/insta.webp" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/hamsu12" target="_blank">
+                        <img src="img/git.png" alt="GitHub">
+                    </a>
+                </div>
+
+                <div class="mail-form">
+                    <h3>📩 메일 보내기</h3>
+                    <input type="text" id="sender-email" placeholder="메일">
+                    <input type="text" id="subject" placeholder="제목">
+                    <textarea id="body" placeholder="제작자에게 전송됩니다 !" rows="5"></textarea>
+                    <button onclick="sendMail()">메일 보내기</button>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="story">
+            <div class="notebook-page">
+            <h2>Story</h2>
+            <p>안녕하세요. 프론트엔드 개발자를 꿈꾸는 함수정입니다 !<br>
+                고등학교 1학년 정보 수업에서 처음 C언어를 접하며, 코드를 통해 실질적인 결과물을 만들어가는 프로그래밍에 흥미를 느꼈습니다.<br>그때를 시작으로 소프트웨어 개발자라는 목표로 꾸준히 학습을 이어왔습니다.<br>
+                알고리즘 공부를 위해 codeup과 baekjoon 문제를 풀며 기초를 다졌고, <br>결과가 눈에 보이는 개발에 대한 갈증을 느껴 웹 개발을 독학했습니다.<br>
+                이후 HTML과 CSS를 활용해 숫자 추측 게임을 만들며 <br>처음으로 직접 만든 화면을 통해 사용자와 소통할 수 있는 경험을 했고, 그 과정에서 큰 재미와 성취감을 느꼈습니다.<br>
+                특히 친구들과 선생님께 직접 보여드리며 피드백과 칭찬, 조언을 주고받는 과정 자체가 매우 즐거웠고, <br>이 경험은 ‘내가 만든 것’이 실제 사용자에게 반응을 이끌어낼 수 있다는 점에서 큰 인상을 남겼습니다.<br>
+                이처럼 <b>사용자와 직접 소통하며 개선해가는 경험이 얼마나 보람차고 재미있는 일인지 처음으로 깨닫게 된 계기</b>였고, <br>그 순간이 제가 프론트엔드에 매력을 느끼게 된 결정적인 포인트였습니다.<br><br>
+
+                대학생이 된 후에는 개인 프로젝트를 넘어 팀원들과 협업하는 경험을 다수 쌓았습니다.<br>
+                특히 자바2 팀 프로젝트 수업에서 제작한 여행 계획 공유 플랫폼 ‘PLAN-J’는 프론트엔드와 백엔드가 함께 협업하며<br>
+                GitHub를 통한 버전 관리, 피드백 기반의 기능 개선 등을 경험할 수 있었던 의미 있는 프로젝트였습니다.<br>
+                이 과정에서 <b>사용자와 직접 상호작용하는 화면을 설계하고 개선하는 일</b>이 저에게 가장 큰 동기와 흥미를 준다는 것을 확실히 느꼈습니다.<br><br>
+                물론 어려움도 있었습니다.<br>
+                ‘PLAN-J’는 처음으로 GitHub를 사용하는 팀 프로젝트 였기에,<br> 프론트엔드와 백엔드가 협업하는 과정에서 깃 브랜치 전략이나 협업 방식에 대한 이해가 부족해 여러 번의 충돌이 발생하였습니다. <br>이를 해결하고자 다른 팀의 우수 사례를 분석해보며 효율적인 깃 구조와 협업 방식을 학습했습니다.<br>
+                또한 여러 선배들에게 조언을 구하며 브랜치 전략, 코드 리뷰 방식, 커밋 메시지 규칙 등을 정리하고 <br>팀원들과 공유하면서 협업 환경을 점차 개선할 수 있었습니다.<br> 이 과정은 협업과 구조 설계의 중요성을 몸소 체감하는 계기가 되었고, 팀워크의 힘을 배울 수 있었던 소중한 경험이었습니다.<br><br>
+
+                현재는 구름톤 유니브 프로젝트 ‘소담소담’을 진행 중입니다.<br>
+                처음으로 리액트를 활용해 프로젝트를 진행하다 보니 컴포넌트 설계나 폴더 구조, 상태 관리 등에서 경험 부족을 절실히 느꼈고, <br>백엔드 팀원들과의 기술적 소통에서도 어려움을 겪었습니다.<br>특히 백엔드 API와 연결하는 과정에서 내가 어떤 데이터를 <br>어떻게 활용해야 할지 헷갈리는 부분이 많았고, 그로 인해 오해가 생기기도 했습니다.<br>
+                하지만 이러한 문제를 해결하고자 리액트 구조 설계에 대해 따로 공부하고, <br>실제로 필요한 화면이나 기능을 기준으로 컴포넌트를 리팩토링하는 연습을 반복하며 점차 나아지고 있습니다.<br> 현재는 카카오 API를 활용한 로그인 및 위치 기반 기능을 구현 중이며, 이를 통해 기술 스택을 넓히고 있습니다.<br><br>
+
+                해당 프로젝트는 기획자, 디자이너, 프론트엔드, 백엔드가 철저히 역할을 나누어 협업하는 구조로 진행되고 있기에,<br> 단순한 기능 구현을 넘어서 API 명세서 작성, DB 설계, Git 기반 협업 등 실무 중심의 개발 프로세스를 폭넓게 경험할 수 있었습니다.<br>
+                특히 각 직군과의 소통을 통해 의도 파악, 요구사항 정리, 일정 조율 등 소프트 스킬도 함께 키울 수 있었고, <br>개발자는 단순히 코드를 구현하는 사람이 아닌, <b>다양한 역할과 함께 목표를 실현해나가는 협업자</b>임을 다시 한 번 실감했습니다.<br>
+                <br>앞으로는 단순히 보기 좋은 화면을 넘어서, <br><b>디자인과 기능성을 조화롭게 고려하여 사용자 경험(UX)을 향상시키는 인터페이스</b>를 만드는 것이 저의 목표입니다.<br>
+                사용자의 입장에서 생각하고, 더 나은 상호작용을 설계하는 프론트엔드 개발자가 되기 위해 노력하겠습니다 !</p><br>
+                <div class="polaroid-container">
+                    <div class="polaroid-slide">
+                        <div class="polaroid" style="transform: rotate(-5deg) translateY(5px); z-index: 1;">
+                            <img src="img/story1.png">
+                            <div class="caption">2021-11-05</div>
+                        </div>
+                        <div class="polaroid" style="transform: rotate(3deg) translateY(-10px); z-index: 2;">
+                            <img src="img/story6.jpeg">
+                            <div class="caption">멘토멘티 교육</div>
+                        </div>
+                        <div class="polaroid" style="transform: rotate(-2deg) translateY(8px); z-index: 3;">
+                            <img src="img/story2.jpeg">
+                            <div class="caption">SW인재 페스티벌</div>
+
+                        </div>
+                        <div class="polaroid" style="transform: rotate(4deg) translateY(-6px); z-index: 4;">
+
+                            <img src="img/story4.jpeg">
+                            <div class="caption">동계종합학술발표회</div>
+
+                        </div>
+                        <div class="polaroid" style="transform: rotate(-4deg) translateY(3px); z-index: 5;">
+                            <img src="img/story7.jpeg">
+                            <div class="caption">2024 창업경진대회</div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+
+
+        </section>
+        <section id="news">
+            <div class="notebook-page">
+            <h2>News</h2>
+            <h3>소비자를 속이는 온라인 마케팅 전략 <span>" 다크패턴(Dark Patterns) "</span></h3>
+            <h4>다크패턴이란 ? </h4>
+            <p>> 사용자의 의사결정을 의도적으로 방해하거나, 왜곡하는 UI/UX 기법</p>
+                <br>
+                <div class="news-wrapper">
+                    <div class="news-container">
+                        <div class="news-item first">
+
+                            <div class="tape" style="top: -15px; left: 20px;"></div>
+                            <img src="img/news_1.png" class="news-img1">
+                        </div>
+                        <div class="news-item middle">
+                            <img src="img/news_2.png" class="news-img1">
+                        </div>
+                        <div class="news-item last">
+                            <img src="img/news_4.png" class="news-img1">
+                            <div class="tape" style="bottom: -5px; right: 30px;"></div>
+                        </div>
+                    </div>
+                    <div class="news-description">
+                        <h4>“ 탈퇴 버튼은 왜 항상 잘 안 보일까? ”</h4>
+                        <p>다크패턴은 사용자의 의사결정을 의도적으로 방해하거나 왜곡하여, <br>기업의 이익을 극대화하는 기만적인 UI/UX 설계 기법입니다.<br>
+                            이러한 디자인은 사용자로 하여금 원치 않는 행동을 하도록 유도하며, <br>온라인 환경에서 소비자의 권리를 침해할 수 있습니다.<br><br>
+                        </p>
+                        <p>방송통신위원회와 공정거래위원회에서 분류한 다크패턴의 유형<br>
+                            ① 편취형: 숨겨진 결제, 거짓 할인, 거짓 추천, 유인 판매, 위장 광고 등<br>
+                            ② 오도형: 숙의식 질문, 잘못된 계층 구조, 특정 옵션의 사전 선택 등 <br>
+                            ③ 방해형: 취소·탈퇴 방해, 숨겨진 정보, 가격 비교 방해 등<br>
+                            ④ 압박형: 감정적 언어사용,낮은 재고 알림, 다른 소비자 활동 알림 등<br>
+                            가 있으며, 일부 온라인 서비스에서는 구독 해지를 위해 평균 7번의 클릭을 요구하며, 사용자가 쉽게 해지하지 못하도록 합니다.<br>
+
+                            또한, 무료 체험 기간 후 별도의 고지 없이 유료 결제로 전환되는 사례도 있습니다. <br>
+                            "해지하면 혜택이 사라집니다"와 같은 감정적 언어를 사용하여, 사용자가 해지를 망설이도록 유도하는 경우도 있습니다.<br>
+                        이러한 다크패턴은 사용자에게 금전적 손실, 개인정보 유출, 소비자 권리 침해라는 부정적 영향을 끼칠 뿐만 아니라,
+                            디지털 환경에서의 소비자 보호를 어렵게 만들며 기업에 대한 신뢰를 저하시킬 수 있습니다. </p>
+                        <p>다크패턴의 확산에 대응하여,<br>
+                        방송통신위원회는 '디지털서비스 시용자 보호를 위한 다크패턴 사례집'을 발간하여,<br>
+                        다양한 다크패턴의 유형과 실제 사례를 소개하며, 소비자 기업 모두에게 경각심을 일깨우고 있습니다.<br>
+                        공정거래위원회는 온라인 다크패턴 자율관리 가이드라인을 제정하여<br>기업들이 윤리적 디자인을 채택하도록 유도하고 있습니다.<br><br>
+                            기업의 이익만을 앞세운 기만적 설계는 단기적으로는 효과를 낼 수 있을지 모르지만, <br>사용자에게 피로함을 남기고 결국 신뢰를 잃게 만듭니다.<br>
+                            기업의 윤리적 책임도 중요하지만, 무엇보다 사용자를 소모시키는 디자인은 결코 오래 사랑받을 수 없습니다.
+
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <section id="projects">
+            <div class="notebook-page">
+            <h2>Projects</h2>
+                <div id="skillsAndTools">
+                    <div id="skills">
+                        <h2 class="sub-theme">Skills</h2>
+
+                        <a class="simple-icon">
+                            <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white">
+                        </a>
+
+                        <a class="simple-icon">
+                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white">
+                        </a>
+
+
+                        <a href="https://www.oracle.com/java/" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/JAVA-fc3838?style=flat&amp;logo=OpenJDK&amp;logoColor=white"></a>
+                        <a href="https://www.mysql.com" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&amp;logo=MySQL&amp;logoColor=white"></a>
+
+
+                        <br>
+                        <br>
+                        <a class="simple-icon">
+                            <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black">
+
+                        </a>
+                        <a href="https://www.mysql.com" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&amp;logo=HTML5&amp;logoColor=white"></a>
+                        <a href="https://www.mysql.com" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&amp;logo=css3&amp;logoColor=white"></a>
+                        <a href="https://www.mysql.com" target="_blank" class="simple-icon">
+                            <img
+                                    src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&amp;logo=javascript&amp;logoColor=white"></a>
+                    </div>
+                    <div id="tools">
+                        <h2 class="sub-theme">Tools</h2>
+                        <a href="https://www.jetbrains.com/ko-kr/idea/" target="_blank" class="simple-icon">
+                            <img
+                                    src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat&amp;logo=IntelliJ IDEA&amp;logoColor=white"></a>
+                        <a target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"></a>
+
+                        <a target="_blank" class="simple-icon">
+                            <img src=https://img.shields.io/badge/WebStorm-000000?style=flat&logo=webstorm&logoColor=white"></a>
+
+                        <br>
+                        <br>
+                        <a href="https://git-scm.com" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/Git-f05032?style=flat&amp;logo=Git&amp;logoColor=white"></a>
+
+                        <a href="https://filezilla-project.org/" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/FileZilla-BF0000?style=flat&logo=filezilla&logoColor=white">
+                        </a>
+
+                        <a href="https://www.postman.com/" target="_blank" class="simple-icon">
+                            <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&amp;logo=Figma&amp;logoColor=white"></a>
+                    </div>
+
+                </div>
+                <br><br>
+            <div class="project-time">
+                <h3>1-1</h3>
+                <p><b>[STUDY]</b> C언어,JAVA 멘토멘티 (멘티)</p>
+                <p><b>[창업동아리]</b> Satto 기획</p>
+                <h3>1-2</h3>
+                <p><b>[C프로그래밍실습]</b> 테트리스 팀프로젝트 제작</p>
+                <h3>2-1</h3>
+                <p><b>[STUDY]</b> C언어,JAVA 멘토멘티 (멘토)</p>
+                <p><b>[학부융합]</b> ONE-PEN STORE 기획<p>
+                <p><b>[자격증]</b> SQLD 취득</p>
+                <h3>2-2</h3>
+                <p><b>[자바2]</b> PLAN-J 프론트엔드 참여<p>
+                <p><b>[IT창업특강]</b> SWEET TIME 기획<p>
+                <p><b>[창업동아리]</b> 뜨개랑 프론트엔드 참여<p>
+                <p><b>[공모전]</b> 킥보드 사고 처리 시스템 참여<p>
+                <h3>3-1 ~ ing</h3>
+                <p><b>[STUDY]</b> C언어,JAVA 멘토멘티 (멘토)</p>
+                <p><b>[STUDY]</b> 구름톤 유니브 공주대 4기</p>
+                <p><b>[STUDY]</b> 전공심화스터디 참여</p>
+                <p><b>[공모전]</b> IRIS 프론트엔드 참여 中<p>
+                <p><b>[창업동아리]</b> 도담도담 프론트엔드 참여 中<p>
+                <p><b>[웹프로그래밍]</b> 자소서 개인 프로젝트<p>
+            </div>
+                <br><br>
+
+
+                <!-- 맨 마지막 프로젝트 (소담소담 / IRIS) -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-status project-in-progress">진행중</div>
+                        <div class="project-image">
+                            <img src="img/project_sodam.png" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>소담소담</h3>
+                            <p></p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <div class="project-tags2">
+                                    <span>Spring</span>
+                                    <span>Kakao Api</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-status project-in-progress">진행중</div>
+                        <div class="project-image">
+                            <img src="img/project_iris1.png" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>IRIS</h3>
+                            <p></p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                                <span>React</span>
+                                <div class="project-tags2">
+                                    <span>Spring</span>
+                                    <span>Mysql</span>
+                                    <span>Aws Ec2</span>
+                                    <span>Aws s3</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 중간 프로젝트 (도담도담 / 킥보드 사고 처리 시스템) -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-status project-in-progress">진행중</div>
+                        <div class="project-image">
+                            <img src="img/project_dodam.png">
+                        </div>
+                        <div class="project-content">
+                            <h3>도담도담</h3>
+                            <p></p>
+                            <div class="project-tags">
+                                <span>Android Studio</span>
+                                <div class="project-tags2">
+                                    <span>Spring</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-status">완료!</div>
+                        <div class="project-image">
+                            <img src="img/project_33.png" alt="Project 1" class>
+                        </div>
+                        <div class="project-content">
+                            <h3>킥보드 사고 처리 시스템</h3>
+                            <p>
+                                설명~
+                            <hr>
+                            어려운점&느낀점
+                            </p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Next.js</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★★☆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 맨 처음 프로젝트 (뜨개랑 / PLAN-J) -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-status">완료!</div>
+                        <div class="project-image">
+                            <img src="img/project_planj1.png" alt="Project 2">
+                        </div>
+                        <div class="project-content">
+                            <h3>PLAN-J </h3>
+                            <p><hr></p>
+                            <div class="project-tags">
+                                <span>Swing</span>
+                                <div class="projects-tags2">
+                                    <span>Spring</span>
+                                    <span>MySql</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★☆☆</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-status">완료!</div>
+                        <div class="project-image">
+                            <img src="img/project_tt1.png" class="img1">
+                        </div>
+                        <div class="project-content">
+                            <h3>뜨개랑 </h3>
+                            <p>
+                                설명~
+                            <hr>
+                            어려운점&느낀점
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                                <span>thymleaf</span>
+                                <div class="project-tags2">
+                                    <span>Spring</span>
+                                    <span>mysql</span>
+                                    <span>aws lightsail</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-button">자세히 보기</button>
+                                <div class="project-rating">★★★★☆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="company">
+            <div class="notebook-page">
+            <h2>Company</h2>
+            <a href="https://toss.tech/article/tds-component-making">toss 1</a>
+            </div>
+        </section>
+        <section id="future">
+            <div class="notebook-page">
+            <h2>Future</h2>
+            </div>
+        </section>
+    </main>
+</div>
+
 <footer>
-  @hamsu12/hamsj2413@naver.com
+    @hamsu12 / hamsj2413@naver.com
 </footer>
+<script src="js/index.js"></script>
 </body>
+
 </html>
