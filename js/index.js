@@ -117,20 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-function sendMail() {
-    const senderEmail = document.getElementById("sender-email").value.trim();
-    const subject = document.getElementById("subject").value.trim();
-    const body = document.getElementById("body").value.trim();
+document.addEventListener('DOMContentLoaded', () => {
+    let counter = 0;
+    const span = document.querySelector('.vanilla span');
+    const btn = document.querySelector('#btn');
 
-    if (!senderEmail) {
-        alert("보내는 사람 이메일을 입력해주세요.");
-        return;
-    }
-
-    const fixedRecipient = "hamsj2413@naver.com";
-    const fullBody = `보낸 사람 이메일: ${senderEmail}\n\n${body}`;
-    const mailtoLink = `mailto:${fixedRecipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(fullBody)}`;
-    window.location.href = mailtoLink;
-}
-
-
+    btn.addEventListener('click', () => {
+        counter++;
+        span.innerText = `Total clicks: ${counter}`;
+    });
+});

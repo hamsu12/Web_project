@@ -22,6 +22,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'goorm-sans-bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/goorm-sans-bold.woff2') format('woff2');
+    font-weight: 400;
+}
+
 
 * {
     cursor: url('/img/pen_cursor.png') 0 0, auto;
@@ -30,24 +42,23 @@
     background-color: lightyellow;
 }
 body {
+    font-family: 'KOMACON';
     background-color: #f8f8f5;
-    color: #1a202c;
+    color: #393939;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* 공통 레이아웃 */
 .container {
     display: flex;
-    flex-direction: column; /* 세로로 쌓기 */
-    min-height: calc(100vh - 150px); /* header + footer 제외 */
+    flex-direction: column;
+    min-height: calc(100vh - 150px);
 }
 
 
-/* Dock 스타일로 sidebar 재정의 */
 #sidebar {
     position: fixed;
-    bottom: -100px; /* 기본적으로 숨김 */
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -61,7 +72,6 @@ body {
     z-index: 999;
 }
 
-/* 링크 스타일 */
 #sidebar a {
     font-family:"Ownglyph_ParkDaHyun";
     font-size:18px;
@@ -74,7 +84,6 @@ body {
     transform: scale(1.3);
 }
 
-/* 하단 감지 영역 */
 #dock-trigger {
     position: fixed;
     bottom: 0;
@@ -118,7 +127,7 @@ header h1 {
 }
 
 section {
-    max-width: 1000px; /* 또는 1200px, 원하는 값 */
+    max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 80px;
 }
@@ -133,7 +142,7 @@ header ul{
     display: flex;
     list-style: none;
     gap:20px;
-    align-self: flex-end;   /* 오른쪽 정렬 */
+    align-self: flex-end;
     margin-top: 10px;
     margin-right: 20px;
 
@@ -149,11 +158,12 @@ header a:hover{
 
 /* footer */
 footer {
+    font-family: 'Ownglyph_ParkDaHyun';
     height: 50px;
-    font-size: 12px;
+    font-size: 17px;
     color: #777;
-    background-color: lightgray;
     text-align: center;
     padding: 15px;
+    margin-bottom: 60px;
     box-sizing: border-box;
 }

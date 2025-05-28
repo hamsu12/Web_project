@@ -16,6 +16,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'BMkkubulimTTF-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/BMkkubulimTTF-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
 
 .intro_1{
     font-family: 'Ownglyph_ParkDaHyun';
@@ -118,6 +124,16 @@
     color: rgb(49, 130, 206);
 }
 
+
+#story{
+    color: #393939;
+}
+
+#story b{
+    color:black;
+    font-size: 15.2px;
+}
+
 #story p{
     line-height: 1.5;
     font-size: 15px;
@@ -127,12 +143,22 @@
     justify-content: space-around;
     text-align: center;
 }
+#news{
+    color: #393939;
+}
 
 #news h3{
     text-align: center;
     margin:0 auto;
 }
-
+#news b{
+    color:black;
+    font-size: 17px;
+}
+#news span{
+    color:black;
+    font-size: 20px;
+}
 .news-img1{
     width: 350px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -149,7 +175,7 @@
 
 .news-item {
     position: relative;
-    margin-bottom: -10px; /* 겹치게 */
+    margin-bottom: -10px;
 }
 
 .news-wrapper {
@@ -157,7 +183,7 @@
     align-items: flex-start;
     align-content: center;
     justify-content: center;
-    gap: 10px; /* 사진과 설명 사이 간격 */
+    gap: 20px;
 }
 
 .news-description {
@@ -186,7 +212,7 @@
 
 .polaroid-slide {
     display: flex;
-    gap: -30px; /* 겹치기 위한 마이너스 간격 효과 */
+    gap: -30px;
     padding: 0 20px;
 }
 
@@ -220,6 +246,24 @@
     transform: rotate(-32deg);
 }
 
+
+.project-time p{
+    font-size: 16px;
+}
+
+.project-time b{
+    color: black;
+}
+.project-time span{
+    color: #6c6c6c;
+    font-size: 14px;
+}
+
+.project-time h3{
+    font-size: 22px;
+    font-family: 'Ownglyph_ParkDaHyun';
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
@@ -228,6 +272,7 @@
 }
 
 .project-card {
+    font-size:14.5px;
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
@@ -340,5 +385,57 @@
     font-size: 24px;
     cursor: pointer;
     user-select: none;
+}
+#company {
+    font-size: 14.5px;
+}
+.company-1 img{
+    width: 200px;
+}
+.company-2 img{
+    width: 300px;
+}
+.company-react, .company-toss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.company-code{
+    display: flex;
+    gap:80px;
+}
+.react, .vanilla {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.react-1, .react-2 {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+    position: absolute;
+    margin: 0;
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'BMkkubulimTTF-Regular';
+}
+.future-plan{
+    margin-left: 20px;
+}
+.future-plan h3{
+    font-family: 'Ownglyph_ParkDaHyun';
+    font-size: 22px;
+}
+.future-plan li{
+    font-size: 15px;
 }
 
